@@ -8,12 +8,13 @@ import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
+import { AuthContext } from "./context/AuthContext ";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
 
   const ProtectedRoutes = ({ children }) => {
-    const { user } = useContext(AudioContext);
+    const { user } = useContext(AuthContext);
     if (!user) {
       return <Navigate to="/login" />;
     }
