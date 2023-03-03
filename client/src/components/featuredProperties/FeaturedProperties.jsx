@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import useFetch from "../Hooks/useFetch";
+import useFetch from "../../Hooks/useFetch";
 import "./featuredProperties.css";
 
 const FeaturedProperties = () => {

@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { useContext, useState } from "react";
 import { SearchContext } from "../../context/SearchContext";
-import useFetch from "../Hooks/useFetch";
 import "./reserve.css";
 import { useNavigate } from 'react-router-dom';
+import useFetch from "../../Hooks/useFetch";
 
 const Reserve = ({ setOpen, hotelId }) => {
   // eslint-disable-next-line no-unused-vars

@@ -1,5 +1,5 @@
+import useFetch from "../../Hooks/useFetch";
 import "./propertyList.css";
-import useFetch from "./../Hooks/useFetch";
 
 const PropertyList = () => {
   const { data, loading, error } = useFetch("/hotels/countByType");
@@ -17,18 +17,16 @@ const PropertyList = () => {
       {loading
         ? "loading. please wait..."
         : images.map((img, i) => (
-            
-              <div key={i} className="pListItem" >
-                <img src={img} alt="" className="pListImg" />
-                <div className="pListTitles">
-                  {/*  ? === if is not empty do */}
-                  <h1>{data[i]?.type}</h1>
-                  <h2>
-                    {data[i]?.type} {data[i]?.count}
-                  </h2>
-                </div>
+            <div key={i} className="pListItem">
+              <img src={img} alt="" className="pListImg" />
+              <div className="pListTitles">
+                {/*  ? === if is not empty do */}
+                <h1>{data[i]?.type}</h1>
+                <h2>
+                  {data[i]?.type} {data[i]?.count}
+                </h2>
               </div>
-            
+            </div>
           ))}
     </div>
   );

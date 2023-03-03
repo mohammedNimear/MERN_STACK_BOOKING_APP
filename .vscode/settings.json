@@ -20,5 +20,6 @@
     "terminal.ansiRed": "#EB008A",
     "terminal.ansiWhite": "#D0D0D0",
     "terminal.ansiYellow": "#F8CA12"
-  }
+  },
+  "cSpell.words": ["Datatable", "datatablesource"]
 }
