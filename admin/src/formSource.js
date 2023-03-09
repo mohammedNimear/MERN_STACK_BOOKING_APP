@@ -24,13 +24,7 @@ export const userInputs = [
     type: "password",
   },
   {
-    id: 2,
-    label: "Name and surname",
-    type: "text",
-    placeholder: "John Doe",
-  },
-  {
-    id: 7,
+    id: "country",
     label: "Country",
     type: "text",
     placeholder: "USA",
@@ -41,7 +35,9 @@ export const userInputs = [
     type: "text",
     placeholder: "NewYork",
   },
-];//hotelInputs 
+];
+
+//hotelInputs
 export const hotelInputs = [
   {
     id: "name",
@@ -59,7 +55,13 @@ export const hotelInputs = [
     id: "city",
     label: "City",
     type: "text",
-    placeholder: "Apple Macbook Pro",
+    placeholder: "berlin",
+  },
+  {
+    id: "address",
+    label: "Address",
+    type: "text",
+    placeholder: "elton st, 216",
   },
   {
     id: "distance",
@@ -71,7 +73,7 @@ export const hotelInputs = [
     id: "title",
     label: "Title",
     type: "text",
-    placeholder: "2 bed rooms",
+    placeholder: "the best hotel",
   },
   {
     id: "desc",
@@ -80,17 +82,11 @@ export const hotelInputs = [
     placeholder: "king size bed, i bathroom",
   },
   {
-    id: "price",
+    id: "cheapestPrice",
     label: "Price",
     type: "number",
     placeholder: "100",
-  },
-  {
-    id: "maxPeople",
-    label: "Max People",
-    type: "number",
-    placeholder: "2",
-  },
+  }
 ];
 
 export const roomInputs = [
@@ -117,5 +113,5 @@ export const roomInputs = [
     label: "Max People",
     type: "number",
     placeholder: "2",
-  },
+  }
 ];

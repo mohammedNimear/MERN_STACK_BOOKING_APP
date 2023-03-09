@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns } from "../../datatablesource";
+// import { userColumns } from "../../datatablesource";
 import { Link } from "react-router-dom";
-import useFetch from "./../../Hooks/useFetch";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import useFetch from '../../Hooks/useFetch';
 
 const Datatable = ({columns}) => {
   const location = useLocation();
@@ -51,9 +51,9 @@ const Datatable = ({columns}) => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Add New User
-        <Link to="/users/new" className="link">
-          Add New
+        {path}
+        <Link to={`/${path}/new`} className="link">
+          Add New {path}
         </Link>
       </div>
       <DataGrid
