@@ -36,7 +36,7 @@ const Header = ({ type }) => {
   });
 
   const navigate = useNavigate();
-  const {user} = useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
   const handleOption = (name, operation) => {
     setOptions((prev) => {
@@ -93,7 +93,10 @@ const Header = ({ type }) => {
               more with a free MD_Booking account
             </p>
             {/* hide register/sign in  button */}
-            {!user && <button className="headerBtn">Sign in / Register</button>}            <div className="headerSearch">
+            {!user && (
+              <button className="headerBtn">Sign in / Register</button>
+            )}{" "}
+            <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
                 <input

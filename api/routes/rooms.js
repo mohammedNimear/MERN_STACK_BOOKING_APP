@@ -1,9 +1,15 @@
-import express from 'express';
-import { createRoom, deleteRoom, getAllRooms, getRoom, upadteRoom, upadteRoomAvailability } from '../controllers/room_ctrl.js';
-import { verfiyAdmin } from '../utils/verfiyToken.js';
+import express from "express";
+import {
+  createRoom,
+  deleteRoom,
+  getAllRooms,
+  getRoom,
+  upadteRoom,
+  upadteRoomAvailability,
+} from "../controllers/room_ctrl.js";
+import { verfiyAdmin } from "../utils/verfiyToken.js";
 
 const router = express.Router();
-
 
 //* CREATE
 
@@ -21,10 +27,9 @@ router.delete("/:id/:hotelid", verfiyAdmin, deleteRoom);
 //* GET
 
 router.get("/:id", getRoom);
-  
+
 //* GET ALL
 
-router.get("/", getAllRooms);   
+router.get("/", getAllRooms);
 
-
-export default router 
+export default router;

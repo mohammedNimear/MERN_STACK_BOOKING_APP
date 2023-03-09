@@ -1,6 +1,5 @@
 import User from "../models/User.js";
 
-
 //! UPDATE
 
 export const upadteUser = async (req, res, next) => {
@@ -16,7 +15,6 @@ export const upadteUser = async (req, res, next) => {
   }
 };
 
-
 //! DELETE
 
 export const deleteUser = async (req, res, next) => {
@@ -27,7 +25,6 @@ export const deleteUser = async (req, res, next) => {
     next(err);
   }
 };
-
 
 //! GET
 

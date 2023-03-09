@@ -1,6 +1,11 @@
-import express from 'express';
-import { deleteUser, getAllUsers, getUser, upadteUser } from "../controllers/user_ctrl.js";
-import { verfiyAdmin, verfiyToken, verfiyUser } from '../utils/verfiyToken.js';
+import express from "express";
+import {
+  deleteUser,
+  getAllUsers,
+  getUser,
+  upadteUser,
+} from "../controllers/user_ctrl.js";
+import { verfiyAdmin, verfiyToken, verfiyUser } from "../utils/verfiyToken.js";
 
 const router = express.Router();
 
@@ -15,10 +20,9 @@ router.delete("/:id", verfiyUser, deleteUser);
 //* GET
 
 router.get("/:id", verfiyUser, getUser);
-  
+
 //* GET ALL
 
-router.get("/", verfiyAdmin,  getAllUsers);
+router.get("/", verfiyAdmin, getAllUsers);
 
-
-export default router
+export default router;
